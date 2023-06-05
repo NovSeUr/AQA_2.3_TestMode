@@ -6,7 +6,6 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import lombok.Value;
-import lombok.val;
 
 import java.util.Locale;
 
@@ -41,15 +40,13 @@ public class DataGenerator {
     public static String getRandomLogin() {
         // TODO: добавить логику для объявления переменной login и задания её значения, для генерации
         //  случайного логина используйте faker
-        String login = faker.name().firstName();
-        return login;
+        return faker.name().firstName();
     }
 
     public static String getRandomPassword() {
         // TODO: добавить логику для объявления переменной password и задания её значения, для генерации
         //  случайного пароля используйте faker
-        String password = faker.internet().password();
-        return password;
+        return faker.internet().password();
     }
 
     public static class Registration {
